@@ -84,7 +84,6 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
-    <plugin name="cordova-plugin-ionic-webview" spec="^2.0.2" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.2" />
     <plugin name="cordova-custom-config" spec="^5.0.2" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
@@ -93,13 +92,14 @@
     <plugin name="cordova-plugin-google-analytics" spec="^1.8.6">
         <variable name="GMS_VERSION" value="11.0.1" />
     </plugin>
-    <plugin name="cordova-plugin-ionic" spec="~5.0.5">
-        <variable name="APP_ID" value="d996c38e" />
+    <plugin name="cordova-plugin-ionic-webview" spec="^2.0.2" />
+    <plugin name="cordova-plugin-ionic" spec="^5.0.5">
+        <variable name="APP_ID" value="D996C38E" />
         <variable name="CHANNEL_NAME" value="Production" />
-        <variable name="UPDATE_METHOD" value="background" />
+        <variable name="UPDATE_METHOD" value="auto" />
+        <variable name="MAX_STORE" value="2" />
         <variable name="WARN_DEBUG" value="true" />
         <variable name="UPDATE_API" value="https://api.ionicjs.com" />
-        <variable name="MAX_STORE" value="2" />
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>
 </widget>
