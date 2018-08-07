@@ -96,7 +96,7 @@
     <plugin name="cordova-plugin-ionic" spec="^5.0.5">
         <variable name="APP_ID" value="D996C38E" />
         <variable name="CHANNEL_NAME" value="Production" />
-        <variable name="UPDATE_METHOD" value="background" />
+        <variable name="UPDATE_METHOD" value="auto" />
         <variable name="MAX_STORE" value="2" />
         <variable name="MIN_BACKGROUND_DURATION" value="20" />
         <variable name="WARN_DEBUG" value="true" />
