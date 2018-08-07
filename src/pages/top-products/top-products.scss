@@ -1,0 +1,42 @@
+page-top-products {
+    .yr{
+            color: #7d7d7d;
+            font-size: 20px;
+            position: relative;
+            border-bottom: 1px solid rgba(0,0,0,0.5); 
+        .cont{
+            padding: 12px;
+            font-size: 18px;
+            color: #303030;
+            padding-left: 16px;
+            border-bottom: 1px solid rgba(0,0,0,0.5); 
+            border-top: 1px solid rgba(0,0,0,0.5); 
+            
+            .month{
+                padding: 12px;
+                font-size: 16px;
+                color: #5d5b5b;
+                padding-left: 16px;
+                border-bottom: 1px solid rgba(0,0,0,0.5); 
+                border-top: 1px solid rgba(0,0,0,0.5); 
+                .prods{
+                    padding: 12px;
+                    font-size: 14px;
+                    color: black;
+                    padding-left: 16px;
+                    width: 80%;
+                    border-bottom: 1px solid rgba(0,0,0,0.5); 
+                }
+            }
+        }
+        .month:last-child,.prods:last-child,.cont:last-child{
+            border-bottom: none !important;
+        }
+    }
+    ion-content{
+        ion-icon{
+            position: absolute;
+            right: 8px;
+        }
+    }
+}

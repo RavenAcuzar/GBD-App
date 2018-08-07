@@ -1,0 +1,55 @@
+<!--
+  Generated template for the TaskListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Tasks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding no-bounce>
+  <ion-grid no-padding>
+    <ion-row class="header">
+      <ion-col col-2>
+        Status
+      </ion-col>
+        <ion-col >
+          Title
+        </ion-col>
+        <ion-col >
+          Description
+        </ion-col>
+        <ion-col>
+          Revision
+        </ion-col>
+        <ion-col >
+          Market Country
+        </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let task of taskList" class="grid-data">
+        <ion-col col-2>
+            {{task.Status}}
+          </ion-col>
+            <ion-col>
+              {{task.Name}}
+            </ion-col>
+            <ion-col [innerHTML]="task.Description">
+            </ion-col>
+            <ion-col [innerHTML]="task.revision">
+            </ion-col>
+            <ion-col>
+              {{task.marketcountry}}
+            </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

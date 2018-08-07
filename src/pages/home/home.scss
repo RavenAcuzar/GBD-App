@@ -1,3 +1,39 @@
 page-home {
-
+    .scroll-content{
+        background-color: #e6e5e5;
+    }
+    .calendar{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(228, 244, 250);
+        padding: 16px 24px;;
+        .divider{
+            text-align: center;
+            .num{
+                font-size: 50px;
+                color: rgba(0, 0, 0, 0.57);
+            }
+            .label{
+                letter-spacing: 3px;
+                color: rgba(0, 0, 0, 0.44);
+            }
+        }
+    }
+    .section-cont{
+        height: 26vh;
+        background-color: #e6e5e5;
+        padding: 5vw;
+        .section-header{
+            font-size: 5vw;
+            letter-spacing: 1vw;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .calendar{
+            background: none;
+            .num{
+                font-size: 40px;
+            }
+        }
+    }
 }

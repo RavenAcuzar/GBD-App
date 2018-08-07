@@ -1,0 +1,47 @@
+<!--
+  Generated template for the AddTaskPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add Task</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding no-bounce>
+<div ion-fixed class="task-bg">
+</div>
+  <div class="task-form" padding>
+    <h4>CREATE TASK</h4>
+    <ion-item no-lines>
+      <ion-label>Market Country</ion-label>
+      <ion-select [(ngModel)]="marketCntry" interface="popover">
+        <ion-option *ngFor="let market of marketSelection">{{market.country}}</ion-option>
+      </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <input [(ngModel)]="title" placeholder="Title" clearInput/>
+      </ion-item>
+      <ion-item>
+        <textarea [(ngModel)]="desc" placeholder="Task Details" clearInput></textarea>
+      </ion-item>
+      <ion-item>
+        <textarea [(ngModel)]="rev" placeholder="Revision" style="height: 11vh;" clearInput></textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Completed Task</ion-label>
+        <ion-toggle [(ngModel)]="taskStatus" color="toggle"></ion-toggle>
+      </ion-item>  
+    <button ion-button full color="secondary" (click)="submitTask()">
+      <ion-icon name="md-add" style="padding-right: 20px;" ></ion-icon>CREATE TASK
+    </button>
+  </div>
+</ion-content>
