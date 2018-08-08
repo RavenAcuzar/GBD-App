@@ -56,7 +56,7 @@
           Actual USD
        </ion-col>
     </ion-row>
-    <ion-row class="grid-data" *ngFor="let sales of salesList | filter:{ week:wks} : false | filter:{ yr: yrs} : false | filter:{ marketcountry: market } : false" >
+    <ion-row class="grid-data" *ngFor="let sales of salesList | filter:{week:wks} : false | filter:{ yr: yrs} : false | filter:{ marketcountry: market } : false" >
         <ion-col>
             Week {{sales.week}} <br/>
             {{sales.yr}}

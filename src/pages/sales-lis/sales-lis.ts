@@ -63,7 +63,9 @@ export class SalesLisPage {
         .subscribe(res => {
           this.salesList = res.json();
           this.salesList.map(s => {
-            return s.yr = (new Date(s.CreatedOn)).getFullYear();
+             s.week = " "+s.week+" ";
+             s.yr = (new Date(s.CreatedOn)).getFullYear();
+             return s;
           })
           var yrs = this.salesList.map(r => r.yr);
           var mark = this.salesList.map(r => r.marketcountry);
