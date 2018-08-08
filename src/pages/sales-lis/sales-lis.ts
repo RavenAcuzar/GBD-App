@@ -70,12 +70,15 @@ export class SalesLisPage {
           var yrs = this.salesList.map(r => r.yr);
           var mark = this.salesList.map(r => r.marketcountry);
           var week = this.salesList.map(r => r.week);
+          mark = mark.map(m=>{
+             return m = m.slice(0, m.indexOf("("));
+          })
           this.yrSelection = yrs.filter((x, i, a) => x && a.indexOf(x) === i);
           this.mrSelection = mark.filter((x, i, a) => x && a.indexOf(x) === i);
           this.wkSelection = week.filter((x, i, a) => x && a.indexOf(x) === i);
           this.wkSelection.sort(this.compareNumbers);
           this.mrSelection.sort();
-          console.log(this.wkSelection);
+         // console.log(this.mrSelection);
         },
           error => {
             load.dismiss();
