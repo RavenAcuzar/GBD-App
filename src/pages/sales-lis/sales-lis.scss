@@ -27,6 +27,15 @@ page-sales-lis {
             font-weight: 200;
             text-align: center;
         }
+        .grid-data:nth-child(1){
+            background-color: rgba(37, 155, 209, 1);
+        }
+        .grid-data:nth-child(2){
+            background-color: rgba(37, 155, 209, 0.8);
+        }
+        .grid-data:nth-child(3){
+            background-color: rgba(37, 155, 209, 0.6);
+        }
         .grid-data:nth-child(odd){
             background-color: rgba(117, 199, 234, 0.18);
         }
