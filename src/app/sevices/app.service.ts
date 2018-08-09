@@ -98,6 +98,7 @@ export class AppService {
                   youralert.present();
             },
         ()=>{
+            loading.dismissAll();
             this.gaSvc.gaEventTracker('Task','Submit Task','Task submitted by user');
         });
     }
@@ -160,6 +161,7 @@ export class AppService {
                   youralert.present();
             },
         ()=>{
+            loading.dismissAll();
             this.gaSvc.gaEventTracker('Report','Submit Report','Report submitted by user');
         });
     }
