@@ -71,14 +71,19 @@ export class SalesLisPage {
           var mark = this.salesList.map(r => r.marketcountry);
           var week = this.salesList.map(r => r.week);
           mark = mark.map(m=>{
+            if(m.includes("(")){
              return m = m.slice(0, m.indexOf("("));
+            }
+            else{
+              return m;
+            }
           })
           this.yrSelection = yrs.filter((x, i, a) => x && a.indexOf(x) === i);
           this.mrSelection = mark.filter((x, i, a) => x && a.indexOf(x) === i);
           this.wkSelection = week.filter((x, i, a) => x && a.indexOf(x) === i);
           this.wkSelection.sort(this.compareNumbers);
           this.mrSelection.sort();
-         // console.log(this.mrSelection);
+          //console.log(this.mrSelection);
         },
           error => {
             load.dismiss();
