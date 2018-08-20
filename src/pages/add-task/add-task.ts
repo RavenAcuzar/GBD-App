@@ -135,6 +135,21 @@ export class AddTaskPage {
         loading.dismissAll();
         youralert.present();
       }
+    }).catch(()=>{
+      let alert = this.alertCtrl.create({
+        title: "Report Not submitted!",
+        message: "Error getting device location.",
+        buttons: [
+          {
+            text: 'OK',
+            role: 'cancel',
+            handler: () => {
+            }
+          }
+        ]
+      });
+      loading.dismissAll();
+      alert.present(); 
     });
 
   }
