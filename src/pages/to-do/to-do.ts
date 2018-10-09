@@ -72,6 +72,7 @@ export class ToDoPage {
       this.status = "NEW";
     }
     this.locSvc.getCurrentLocation().then(coords => {
+      console.log(coords);
       if (this.appSvc.checkForm({
         marketCountry: this.marketCntry,
         title: this.title,
