@@ -1,9 +1,16 @@
 <ion-header>
   <ion-navbar>
+<<<<<<< HEAD
+=======
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+>>>>>>> production
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
+<<<<<<< HEAD
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
   <p>
@@ -15,3 +22,103 @@
     update any existing page or create new pages.
   </p>
 </ion-content>
+=======
+<ion-content no-padding>
+  <div class="calendar">
+    <div class="divider">
+      <div class="num">
+        {{weekNumber.weekNum}}
+      </div>
+      <div>
+        <span class="label">WEEK</span>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="num">
+        {{weekNumber.year}}
+      </div>
+      <div>
+        <span class="label">YEAR</span>
+      </div>
+    </div>
+  </div>
+  <div class="section-cont">
+    <div class="section-header">{{worldPlan.PlanType}}</div>
+    <div class="calendar">
+      <div class="divider">
+        <div class="num">
+          {{numberFormat(worldPlan.Target)}}
+        </div>
+        <div>
+          <span class="label">TARGET</span>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="num">
+          <ion-icon [name]="greater ? 'ios-arrow-forward' : 'ios-arrow-back'"></ion-icon>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="num">
+          {{numberFormat(worldPlan.Actual)}}
+        </div>
+        <div>
+          <span class="label">ACTUAL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-cont">
+      <div class="section-header">{{indiaPlan.PlanType}}</div>
+    <div class="calendar">
+      <div class="divider">
+        <div class="num">
+          {{numberFormat(indiaPlan.Target)}}
+        </div>
+        <div>
+          <span class="label">TARGET</span>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="num">
+          <ion-icon [name]="ingreater ? 'ios-arrow-forward' : 'ios-arrow-back'"></ion-icon>
+        </div>
+      </div>
+      <div class="divider">
+        <div class="num">
+          {{numberFormat(indiaPlan.Actual)}}
+        </div>
+        <div>
+          <span class="label">ACTUAL</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-cont">
+      <div class="section-header">{{rsp.PlanType}}</div>
+      <div class="calendar">
+        <div class="divider">
+          <div class="num">
+            {{numberFormat(rsp.Target)}}
+          </div>
+          <div>
+            <span class="label">TARGET</span>
+          </div>
+        </div>
+        <div class="divider">
+          <div class="num">
+            <ion-icon [name]="rgreater ? 'ios-arrow-forward' : 'ios-arrow-back'"></ion-icon>
+          </div>
+        </div>
+        <div class="divider">
+          <div class="num">
+            {{numberFormat(rsp.Actual)}}
+          </div>
+          <div>
+            <span class="label">ACTUAL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+</ion-content>
+>>>>>>> production

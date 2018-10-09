@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "WikitudeIonic3StarterApp",
   "app_id": "",
   "type": "ionic-angular",
@@ -6,3 +7,12 @@
     "cordova": {}
   }
 }
+=======
+  "name": "GBD_App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "d996c38e"
+}
+>>>>>>> production

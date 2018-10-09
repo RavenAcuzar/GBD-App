@@ -1,0 +1,38 @@
+page-sales-lis {
+    @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+        @each $property in $properties {
+          #{$property}: $min-value;
+        }
+    };
+    
+    ion-grid{
+        .header{
+            background-color: #6b6b6b;; 
+            padding:5px; 
+            @include fluid-type(font-size, 600px, 1200px, 12px, 32px);
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            ion-col{
+                border-right: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 5px !important;
+            }
+            ion-col:last-child{
+                border: none;
+            }
+        }
+        .grid-data{
+            padding:5px; 
+            font-size: 12px; 
+            font-weight: 200;
+            text-align: center;
+        }
+        .grid-data:nth-child(odd){
+            background-color: rgba(117, 199, 234, 0.18);
+        }
+        .grid-data:nth-child(even){     
+            background-color: rgba(37, 155, 209, 0.38);
+        }
+    }
+
+}
