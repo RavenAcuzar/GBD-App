@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ion-menu [content]="content" type="push">
   <ion-content class="menu-content">
     <div class="menu-header">
@@ -22,3 +23,34 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+||||||| merged common ancestors
+=======
+<<<<<<< HEAD
+<ion-nav [root]="rootPage"></ion-nav>
+=======
+<ion-menu [content]="content" type="push">
+  <ion-content class="menu-content">
+    <div class="menu-header">
+      <img src="./assets/imgs/prof-bg-header.jpg"/>
+      <div class="menu-header-details">
+        <img src="./assets/imgs/avatar-prof.jpg"/>
+        <h5>{{username}}</h5>
+        <p><i>{{email}}</i></p>
+      </div>
+    </div>
+    <ion-list no-lines padding>
+      <button menuClose ion-item icon-start *ngFor="let p of pages" (click)="openPage(p)" >
+        <ion-icon name="{{p.icon}}" style="font-size: 17px; padding-right:10px;"></ion-icon>{{p.title}}
+      </button>
+      <button menuClose ion-item icon-start (click)="Logout()">
+        <ion-icon name="md-log-out" style="font-size: 17px; padding-right:10px;"></ion-icon>Logout
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+>>>>>>> production
+>>>>>>> c41c6ac60b1a00792d0fcfd0c129959b0425494f

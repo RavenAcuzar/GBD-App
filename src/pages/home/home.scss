@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 page-home {
     .scroll-content{
         background-color: #e6e5e5;
@@ -42,3 +43,49 @@ page-home {
         }
     }
 }
+||||||| merged common ancestors
+=======
+page-home {
+<<<<<<< HEAD
+
+=======
+    .scroll-content{
+        background-color: #e6e5e5;
+    }
+    .calendar{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(228, 244, 250);
+        padding: 16px 24px;;
+        .divider{
+            text-align: center;
+            .num{
+                font-size: 50px;
+                color: rgba(0, 0, 0, 0.57);
+            }
+            .label{
+                letter-spacing: 3px;
+                color: rgba(0, 0, 0, 0.44);
+            }
+        }
+    }
+    .section-cont{
+        height: 26vh;
+        background-color: #e6e5e5;
+        padding: 5vw;
+        .section-header{
+            font-size: 5vw;
+            letter-spacing: 1vw;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .calendar{
+            background: none;
+            .num{
+                font-size: 40px;
+            }
+        }
+    }
+>>>>>>> production
+}
+>>>>>>> c41c6ac60b1a00792d0fcfd0c129959b0425494f

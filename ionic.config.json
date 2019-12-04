@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "GBD_App",
   "integrations": {
@@ -6,3 +7,24 @@
   "type": "ionic-angular",
   "pro_id": "d996c38e"
 }
+||||||| merged common ancestors
+=======
+{
+<<<<<<< HEAD
+  "name": "WikitudeIonic3StarterApp",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
+=======
+  "name": "GBD_App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "d996c38e"
+}
+>>>>>>> production
+>>>>>>> c41c6ac60b1a00792d0fcfd0c129959b0425494f
