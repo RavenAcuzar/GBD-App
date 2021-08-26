@@ -1,4 +1,4 @@
-# ![App Icon](https://github.com/RavenAcuzar/WednesdayMessageApp/blob/master/resources/android/icon/drawable-xhdpi-icon.png) 
+# ![App Icon](https://github.com/RavenAcuzar/GBD-App/blob/master/resources/android/icon/drawable-xhdpi-icon.png) 
 # Kamikaze Mobile App (For TheV GBD)
 
 This is created for the members of the GBD of TheV.
