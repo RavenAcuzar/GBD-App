@@ -2,6 +2,7 @@
 # Kamikaze Mobile App (For TheV GBD)
 
 This is created for the members of the GBD of TheV.
+
 In this app, you can monitor the target and the actual sales of each market. You can also submit your tasks and reports per assigned market country. See statistics of the target and actual values of World and India Plans, RSP, and the list of the top products per month.
 
 ## Getting Started
